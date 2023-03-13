@@ -1,0 +1,15 @@
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Users\melisa.ozel\source\repos\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.pdb
