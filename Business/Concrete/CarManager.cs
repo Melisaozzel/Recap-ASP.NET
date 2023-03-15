@@ -19,5 +19,26 @@ namespace Business.Concrete
         {
             return _ICarDal.GetAll();
         }
-    }
+
+
+        public List<Car> GetCarsByBrandId(int id)
+        {
+            return _ICarDal.GetAll(p => p.BrandId == id);
+        }
+
+        public List<Car> GetCarsByColorId(int id)
+        {
+            return _ICarDal.GetAll(p => p.ColorId == id);
+
+        }
+
+        public void AddWithCondition(Car car)
+        {
+            if (car.Description.Length >= 2 && car.DailyPrice > 0)
+                _ICarDal.Add(car);
+            else
+                Console.WriteLine("Araba ismini ve günlük ücreti konrol edin!");
+
+        }
+  }
 }
