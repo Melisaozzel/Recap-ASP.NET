@@ -4,6 +4,7 @@ using System.Text;
 using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Concrete
 {
@@ -39,6 +40,11 @@ namespace Business.Concrete
             else
                 Console.WriteLine("Araba ismini ve günlük ücreti konrol edin!");
 
+        }
+
+        public List<CarDetailDto> GetCarDetailDto()
+        {
+          return  _ICarDal.GetCarDetails();
         }
   }
 }

@@ -1,17 +1,81 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\DataAccess\\DataAccess.csproj",
-        "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\melisa.ozel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\melisa.ozel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\melisa.ozel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +96,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\Entities.csproj"
+              "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Core\\Core.csproj"
+              },
+              "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -72,14 +139,14 @@
         }
       }
     },
-    "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\Entities.csproj": {
+    "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\melisa.ozel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,7 +166,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Core\\Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

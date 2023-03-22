@@ -9,12 +9,26 @@ namespace ConsolUI
     {
         static void Main(string[] args)
         {
-            ICarService _ıCarService = new CarManager(new EFCarDal());
 
-            foreach (var car in _ıCarService.GetAll())
+             CarTest();
+             Console.ReadLine();
+        }
+
+        private static void CarTest()
+        {
+            CarManager carManager = new CarManager(new EFCarDal());
+
+            
+            foreach (var product in carManager.GetCarDetailDto())
             {
-                Console.WriteLine(car.Description);
+                Console.WriteLine(product.CarName);
+                Console.WriteLine(product.BrandName);
+                Console.WriteLine(product.DailyPrice);
+                Console.WriteLine(product.ColorName);
             }
+
+
+
         }
     }
 }

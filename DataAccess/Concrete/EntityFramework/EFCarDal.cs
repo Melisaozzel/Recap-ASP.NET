@@ -3,61 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
-
+using Entities.DTOs;
 namespace DataAccess.Concrete.EntityFramework
 {
-   public class EFCarDal:ICarDal
+   public class EFCarDal:EfEntityRepositoryBase<Car,RecapProjectContext>,ICarDal
     {
-        public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
-        {
-            using (RecapProjectContext context=new RecapProjectContext())
-            {
-                return filter == null
-                    ? context.Set<Car>().ToList()
-                    : context.Set<Car>().Where(filter).ToList();
-            }
-        }
 
-        public Car Get(Expression<Func<Car, bool>> filter)
+        public List<CarDetailDto> GetCarDetails()
         {
             using (RecapProjectContext context = new RecapProjectContext())
             {
-                return context.Set<Car>().SingleOrDefault(filter);
+                var result = from car in context.Cars
+                    join b in context.Brands on car.BrandId equals b.id
+                    join c in context.Colors on car.ColorId equals c.id
+                    select new CarDetailDto()
+                    {
+                        CarName = car.Description, BrandName = b.Name, ColorName = c.Name, DailyPrice = car.DailyPrice
+                    };
+                return result.ToList();
             }
-        }
-
-        public void Add(Car entity)
-        {
-            using (RecapProjectContext context=new RecapProjectContext()) //IDispossable pattern implementation of c# => Garbage collector 
-            {
-                var addedEntity = context.Entry(entity);
-                addedEntity.State = EntityState.Added;    // EntityState.Added
-                context.SaveChanges();
-            }
-        }
-
-        public void Delete(Car entity)
-        {
-            using (RecapProjectContext context=new RecapProjectContext()) //EntityState.Deleted 
-            {
-                var deletedEntity = context.Entry(entity);
-                deletedEntity.State = EntityState.Deleted;
-                context.SaveChanges();
-            }
-        }
-
-        public void Update(Car entity)
-        {
-            using (RecapProjectContext context=new RecapProjectContext()) //EntityState.Modified
-            {
-                var updatedEntity = context.Entry(entity);
-                updatedEntity.State = EntityState.Modified;
-                context.SaveChanges();
-            }
-
         }
     }
 }

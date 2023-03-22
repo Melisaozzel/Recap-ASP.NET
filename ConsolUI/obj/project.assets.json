@@ -1482,10 +1482,24 @@
           "bin/placeholder/Business.dll": {}
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Core": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11"
         },
@@ -1499,6 +1513,9 @@
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Entities.dll": {}
         },
@@ -5687,6 +5704,11 @@
       "path": "../Business/Business.csproj",
       "msbuildProject": "../Business/Business.csproj"
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "DataAccess/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
@@ -5712,11 +5734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\ConsolUI\\ConsolUI.csproj",
+      "projectUniqueName": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\ConsolUI\\ConsolUI.csproj",
       "projectName": "ConsolUI",
-      "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\ConsolUI\\ConsolUI.csproj",
+      "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\ConsolUI\\ConsolUI.csproj",
       "packagesPath": "C:\\Users\\melisa.ozel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\ConsolUI\\obj\\",
+      "outputPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\ConsolUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5737,14 +5759,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Business\\Business.csproj"
+            "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Business\\Business.csproj"
             },
-            "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\Entities.csproj"
+            "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\Entities.csproj"
             }
           }
         }

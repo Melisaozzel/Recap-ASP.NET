@@ -1468,10 +1468,24 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Core": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11"
         },
@@ -1485,6 +1499,9 @@
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Entities.dll": {}
         },
@@ -5668,6 +5685,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "DataAccess/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
@@ -5692,11 +5714,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\melisa.ozel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Business\\obj\\",
+      "outputPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5717,11 +5739,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\RecapProject\\Entities\\Entities.csproj"
+            "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\melisa.ozel\\source\\repos\\ReCapProject\\Entities\\Entities.csproj"
             }
           }
         }
